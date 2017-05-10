@@ -1,6 +1,6 @@
 # Home of my First Java App implementation
 ---
-:punch: Keep Calm, Carry on.
+:punch: Keep Calm, Carry on. :smile:
 - To Do List 
 	- [ ] 1. List/Add/Edit/Delete categories
 	- [ ] 2. List/Add/Edit/Delete products
