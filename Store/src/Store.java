@@ -3,10 +3,10 @@ import java.sql.*;
 
 public class Store{
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-	static final String DB_URL = "jdbc:mysql://35.190.146.242:3306/Store";
+	static final String DB_URL = null;
 	
-	static final String User = "root";
-	static final String Pass = "561214";
+	static final String User = null;
+	static final String Pass = null;
 	
 	public void connectsql(){
 		Connection conn = null; 
