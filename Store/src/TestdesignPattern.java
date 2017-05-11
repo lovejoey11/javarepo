@@ -5,7 +5,9 @@ public class TestdesignPattern {
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		testAbstractFactory();
+		Store s = new Store();
+		s.connectsql();
+//		testAbstractFactory();
 	}
 	
 	private static void testAbstractFactory() throws Exception{
