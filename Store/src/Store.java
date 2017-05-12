@@ -1,14 +1,26 @@
 import java.sql.*;
+import java.util.*;
+import java.io.*;
 
 
 public class Store{
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-	static final String DB_URL = null;
+	static String DB_URL = null;
 	
-	static final String User = null;
-	static final String Pass = null;
-	
-	public void connectsql(){
+	static String User = null;
+	static String Pass = null;
+	private void readcredential() throws IOException{
+		Properties prop = new Properties();
+		prop.load(new FileInputStream("credentials.txt"));
+		DB_URL = prop.getProperty("DB_URL");
+		User = prop.getProperty("Username");
+		Pass = prop.getProperty("Passwd");
+		
+		//System.out.println("User name: " + User);
+		//System.out.println("Password: " + Pass);
+		}
+	public void connectsql() throws IOException{
+		readcredential();
 		Connection conn = null; 
 		Statement stmt = null; 
 		try{
