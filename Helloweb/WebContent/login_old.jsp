@@ -17,8 +17,6 @@
 	static String Pass = null;
 	public void jspInit(){
 		try {
-			
-			
 				Properties prop = new Properties();
 				prop.load(new FileInputStream("credentials.txt"));
 				DB_URL = prop.getProperty("DB_URL");

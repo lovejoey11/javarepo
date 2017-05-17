@@ -1,19 +1,30 @@
 package com.demo.service;
 
+import java.io.FileInputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.Properties;
 
 
 
 public class LoginService {
 	
 	Connection con;
+	static String DB_URL = null;
+	static String User = null;
+	static String Pass = null;
 	public LoginService(){
 		try {
+			Properties prop = new Properties();
+			prop.load(new FileInputStream("C:\\Users\\Lovejoy\\Documents\\GitHub\\javarepo\\Helloweb\\credentials.txt"));
+			DB_URL = prop.getProperty("DB_URL");
+			User = prop.getProperty("Username");
+			Pass = prop.getProperty("Passwd");
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://35.190.146.242:3306/Store", "root" , "528119lv");
+			con = DriverManager.getConnection(DB_URL,User,Pass);
+			
 		}catch (Exception e){
 			e.printStackTrace();
 		}
