@@ -33,7 +33,9 @@ public class UserService {
 	public int register(User user){
 		int result= 0;
 		try{
-			PreparedStatement ps=con.prepareStatement("insert into User (firstname,lasename,usergroup,username,password) values (?,?,?,?,?)");
+			PreparedStatement ps=con.prepareStatement("insert into User "
+					+ "(firstname,lasename,usergroup,username,password) "
+					+ "values (?,?,?,?,?)");
 			ps.setString(1, user.getFirstname());
 			ps.setString(2, user.getLastname());
 			ps.setString(3, user.getUsergroup());
@@ -50,10 +52,11 @@ public class UserService {
 	public List<User> retriveAll(){
 		ArrayList<User> list = new ArrayList<User>();
 		try{
-			PreparedStatement ps = con.prepareStatement("Select * form User");
+			PreparedStatement ps = con.prepareStatement("Select * from User");
 			ResultSet rs = ps.executeQuery();
 			while(rs.next()){
 				User user = new User(rs.getString("firstname"), rs.getString("lastname"), rs.getString("usergroup"), rs.getString("username"),rs.getString("password"), rs.getInt("userid"));
+				//System.out.println(user);
 				list.add(user);
 			}
 		

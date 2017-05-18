@@ -1,12 +1,14 @@
 package com.demo.model;
 
 public class User {
+	
 	private String firstname;
 	private String lastname;
 	private String usergroup;
 	private String username;
 	private String passwd;
 	private int id;
+	
 	public User(String firstname, String lastname, String usergroup,
 			String username, String passwd, int id) {
 		this.firstname = firstname;

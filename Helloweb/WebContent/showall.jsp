@@ -10,10 +10,14 @@
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<title>Insert title here</title>
+<title>All users</title>
 </head>
 <body>
+<div class="container">
 <jsp:useBean id="userService" class="com.demo.service.UserService"></jsp:useBean>
+<div class="alert alert-success" role="alert">
+		  <strong>Congratulation!!</strong> You are successfully Logged in.
+		</div>
 <table class="table thead-default table-striped table-hover">
 <thead>
     <tr>
@@ -22,6 +26,8 @@
       <th>Last Name</th>
       <th>Username</th>
       <th>Usergroup</th>
+      <th>Password</th>
+      <th>Action</th>
     </tr>
   </thead>
   <%
@@ -32,8 +38,9 @@
   			<td><input type="checkbox" value="<%= user.getId() %>" /></td>
   			<td><%= user.getFirstname() %></td>
   			<td><%= user.getLastname() %></td>
-  			<td><%= user.getUsergroup() %></td>
   			<td><%= user.getUsername() %></td>
+  			<td><%= user.getUsergroup() %></td>
+  			<td><%= user.getPasswd() %></td>
   			<td>
   				<a href="edit.jsp?id=<%= user.getId() %>"><img src="images/edit.png" /></a>
   				<a href="delete.jsp?id=<%= user.getId() %>"><img src="images/delete.png" /> </a>
@@ -43,6 +50,8 @@
   	}
   %>
 </table>
+<a href="index.html" class="btn btn-primary btn-md" role="botton">Back</a>
 
+</div>
 </body>
 </html>
