@@ -17,6 +17,7 @@
 			String uname = request.getParameter("username");
 			String pword = request.getParameter("password");
 			
+			
 			boolean flag = UserService.login(uname,pword);
 			if(!flag){
 				response.sendRedirect("error.jsp");
@@ -24,7 +25,7 @@
 				if (uname.equals("admin")){
 					response.sendRedirect("showall.jsp");
 				}else{
-				response.sendRedirect("success.jsp");}
+				response.sendRedirect("success-login.jsp");}
 			}
 			
 		%>

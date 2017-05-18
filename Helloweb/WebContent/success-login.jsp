@@ -12,13 +12,17 @@
 </head>
 <body>
 	<div class="container">
-	  <!-- Content here -->
-		<div class="alert alert-success" role="alert">
-		  <strong>Congratulation!!</strong> You are successfully Logged in.
+	  <div class="row">
+		<div class="col-sm-6">
+			<div class="alert alert-success" role="alert">
+			  <strong>Congratulation!!</strong> You are successfully Logged in.
+			</div>
+			<a href="login.html"><button type="button" class="btn btn-primary btn-md">Login</button></a>
+			<a href="register.html"><button type="button" class="btn btn-primary btn-md">Register</button></a>
+			<a href="index.html" class="btn btn-primary btn-md" role="botton">Back</a>
+			</div>
+			<div class="col-sm-6"></div>
 		</div>
-		<a href="login.html"><button type="button" class="btn btn-primary btn-md">Login</button></a>
-		<a href="register.html"><button type="button" class="btn btn-primary btn-md">Register</button></a>
-		<a href="index.html" class="btn btn-primary btn-md" role="botton">Back</a>
 	</div>
 </body>
 </html>

@@ -12,13 +12,18 @@
 </head>
 <body>
 	<div class="container">
-	  <!-- Content here -->
-		<div class="alert alert-success" role="alert">
-		  <strong>Congratulation!!</strong> You are successfully Registered.
+	  	<div class="row">
+			<div class="col-sm-6">
+			<div class="alert alert-success" role="alert">
+			  <strong>Congratulation!!</strong> You are successfully Registered.
+			</div>
+			<a href="login.html"><button type="button" class="btn btn-primary btn-md">Login</button></a>
+			<a href="register.html"><button type="button" class="btn btn-primary btn-md">Register</button></a>
+			<a href="index.html" class="btn btn-primary btn-md" role="botton">Back</a>
+			<a href="showall.jsp" class="btn btn-primary btn-md" role="botton">Show All</a>
+			</div>
+			<div class="col-sm-6"></div>
 		</div>
-		<a href="login.html"><button type="button" class="btn btn-primary btn-md">Login</button></a>
-		<a href="register.html"><button type="button" class="btn btn-primary btn-md">Register</button></a>
-		<a href="index.html" class="btn btn-primary btn-md" role="botton">Back</a>
 	</div>
 </body>
 </html>

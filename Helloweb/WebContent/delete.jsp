@@ -12,8 +12,12 @@
 		
 		<% 
 			int id = Integer.parseInt(request.getParameter("id"));
-			UserService.delete(id);
-			response.sendRedirect("showall.jsp");
+			int result = 0;
+			result = UserService.delete(id);
+			if (result==1){
+				response.sendRedirect("success_op.jsp");
+			}else {response.sendRedirect("error.jsp");
+			}
 		%>
 
 

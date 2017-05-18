@@ -33,7 +33,7 @@ public class LoginService {
 	public boolean login(String uname, String pword)
 	{
 		try{
-			PreparedStatement ps = con.prepareStatement("Select * from User where username=? and password=?");
+			PreparedStatement ps = con.prepareStatement("Select * from User.User where username=? and password=?");
 			ps.setString(1, uname);
 			ps.setString(2, pword);
 			ResultSet rs = ps.executeQuery();

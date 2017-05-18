@@ -16,8 +16,8 @@
 <div class="container">
 <jsp:useBean id="userService" class="com.demo.service.UserService"></jsp:useBean>
 <div class="alert alert-success" role="alert">
-		  <strong>Congratulation!!</strong> You are successfully Logged in.
-		</div>
+	<strong>Hello Admin. You are in dashboard</strong>
+</div>
 <table class="table thead-default table-striped table-hover">
 <thead>
     <tr>
@@ -51,7 +51,7 @@
   %>
 </table>
 <a href="index.html" class="btn btn-primary btn-md" role="botton">Back</a>
-
+<a href="register.html"><button type="button" class="btn btn-primary btn-md">Add user</button></a>
 </div>
 </body>
 </html>

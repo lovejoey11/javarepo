@@ -8,21 +8,24 @@
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<title>Error</title>
+<title>Login success</title>
 </head>
 <body>
 	<div class="container">
-		<div class="row">
+	  <div class="row">
 		<div class="col-sm-6">
-			<div class="alert alert-danger" role="alert">
-			  <strong>Oops!</strong> Something Wrong happend.
+			<div class="alert alert-success" role="alert">
+			  <strong>Congratulation!!</strong> Your operation is done.
 			</div>
 			<a href="login.html"><button type="button" class="btn btn-primary btn-md">Login</button></a>
 			<a href="register.html"><button type="button" class="btn btn-primary btn-md">Register</button></a>
 			<a href="index.html" class="btn btn-primary btn-md" role="botton">Back</a>
+			<a href="showall.jsp"><button type="button" class="btn btn-primary btn-md">Show ALL</button></a>
+			</div>
+			<div class="col-sm-6"></div>
 		</div>
-		<div class="col-sm-6"></div>
+		
 	</div>
-	</div>
+	
 </body>
 </html>

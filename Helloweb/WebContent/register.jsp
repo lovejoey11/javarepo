@@ -7,13 +7,20 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+
 <jsp:useBean id="userService" class="com.demo.service.UserService" />
-<jsp:useBean id="User" class="com.demo.model.User" />
+<jsp:useBean id="user" class="com.demo.model.User" />
 <jsp:setProperty property="*" name="user"/>
 
 <%
-	int x = userService.register(User);
-	response.sendRedirect("success-regi.jsp");
+	int x = userService.register(user);
+	if (x ==1){
+		response.sendRedirect("success-regi.jsp");
+	}else{
+		response.sendRedirect("fail-regi.jsp");
+	}
+
 %>
 
 
