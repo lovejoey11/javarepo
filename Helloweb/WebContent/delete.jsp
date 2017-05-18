@@ -10,19 +10,10 @@
 <div class="container">
 		<jsp:useBean id="UserService" class="com.demo.service.UserService" />
 		
-		<%
-			String uid = request.getParameter("userID");
-			
-			boolean flag = UserService.delete(userID)
-			if(!flag){
-				response.sendRedirect("error.jsp");
-			}else{
-				if (uname.equals("admin")){
-					response.sendRedirect("showall.jsp");
-				}else{
-				response.sendRedirect("success.jsp");}
-			}
-			
+		<% 
+			int id = Integer.parseInt(request.getParameter("id"));
+			UserService.delete(id);
+			response.sendRedirect("showall.jsp");
 		%>
 
 
