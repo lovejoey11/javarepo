@@ -1,4 +1,4 @@
-# Home of my First Java App implementation
+# Home of my First Java Application implementation
 ---
 :punch: Keep Calm, Carry on. :smile:
 
@@ -11,8 +11,8 @@ Passwd='' Your password to the database ''
 - Implemented
 	- [x] 1. Remote database connectivity.
 	- [x] 2. Read Credentials from User file.
-	- [x] 3. Local Product modifications.
-	- [x] 4. Local categories Modifications.
+	- [x] 3. Local product modifications.
+	- [x] 4. Local categories modifications.
 - To Do List 
 	- [ ] 1. List/Add/Edit/Delete categories
 	- [ ] 2. List/Add/Edit/Delete products
