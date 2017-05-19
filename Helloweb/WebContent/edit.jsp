@@ -46,7 +46,7 @@
 			<option value="Guest"> Guest </option>
 		</select> <br><br>
 		<input type="submit" class="btn btn-primary btn-md" value="Submit Edit" /> 
-		<a href="index.html" class="btn btn-primary btn-md" role="botton">Back</a>
+		<a href="index.html" class="btn btn-primary btn-md" role="botton">Home</a>
 	</form>
 </div>
 

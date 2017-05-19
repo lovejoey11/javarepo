@@ -50,7 +50,7 @@
   	}
   %>
 </table>
-<a href="index.html" class="btn btn-primary btn-md" role="botton">Back</a>
+<a href="index.html" class="btn btn-primary btn-md" role="botton">Home</a>
 <a href="register.html"><button type="button" class="btn btn-primary btn-md">Add user</button></a>
 </div>
 </body>

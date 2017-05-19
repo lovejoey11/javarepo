@@ -19,7 +19,7 @@
 			</div>
 			<a href="login.html"><button type="button" class="btn btn-primary btn-md">Login</button></a>
 			<a href="register.html"><button type="button" class="btn btn-primary btn-md">Register</button></a>
-			<a href="index.html" class="btn btn-primary btn-md" role="botton">Back</a>
+			<a href="index.html" class="btn btn-primary btn-md" role="botton">Home</a>
 			<a href="showall.jsp"><button type="button" class="btn btn-primary btn-md">Show ALL</button></a>
 			</div>
 			<div class="col-sm-6"></div>

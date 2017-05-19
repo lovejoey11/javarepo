@@ -1,6 +1,7 @@
 package com.demo.service;
 
 
+//import java.io.File;
 import java.io.FileInputStream;
 import java.sql.*;
 import java.util.ArrayList;
@@ -18,7 +19,7 @@ public class UserService {
 	public UserService(){
 		try {
 			Properties prop = new Properties();
-			prop.load(new FileInputStream("C:\\Users\\Lovejoy\\Documents\\GitHub\\javarepo\\Helloweb\\credentials.txt"));
+			prop.load(new FileInputStream(LoginService.getPath()));
 			DB_URL = prop.getProperty("DB_URL");
 			User = prop.getProperty("Username");
 			Pass = prop.getProperty("Passwd");
