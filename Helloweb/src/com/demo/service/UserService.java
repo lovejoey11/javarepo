@@ -1,35 +1,42 @@
 package com.demo.service;
 
 
-//import java.io.File;
-import java.io.FileInputStream;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Properties;
-
 import com.demo.model.User;
 
 public class UserService {
 	Connection con;
-	static String DB_URL = null;
-	static String User = null;
-	static String Pass = null;
+	
 	
 	public UserService(){
-		try {
-			Properties prop = new Properties();
-			prop.load(new FileInputStream(LoginService.getPath()));
-			DB_URL = prop.getProperty("DB_URL");
-			User = prop.getProperty("Username");
-			Pass = prop.getProperty("Passwd");
-			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection(DB_URL,User,Pass);
-			
-		}catch (Exception e){
+		try{
+			con = ConnectionProvider.getCon();
+		}catch(Exception e){
 			e.printStackTrace();
 		}
 	}
+	
+	
+//	static String DB_URL = null;
+//	static String User = null;
+//	static String Pass = null;
+//	
+//	public UserService(){
+//		try {
+//			Properties prop = new Properties();
+//			prop.load(new FileInputStream(LoginService.getPath()));
+//			DB_URL = prop.getProperty("DB_URL");
+//			User = prop.getProperty("Username");
+//			Pass = prop.getProperty("Passwd");
+//			Class.forName("com.mysql.jdbc.Driver");
+//			con = DriverManager.getConnection(DB_URL,User,Pass);
+//			
+//		}catch (Exception e){
+//			e.printStackTrace();
+//		}
+//	}
 	
 	public int register(User user){
 		int result= 0;
