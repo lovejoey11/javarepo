@@ -18,43 +18,6 @@ public class LoginService {
 		}
 	}
 	
-//	static String DB_URL = null;
-//	static String User = null;
-//	static String Pass = null;
-//
-//	public LoginService(){
-//		try {
-//			Properties prop = new Properties();
-//			prop.load(new FileInputStream(getPath()));
-//			DB_URL = prop.getProperty("DB_URL");
-//			User = prop.getProperty("Username");
-//			Pass = prop.getProperty("Passwd");
-//			Class.forName("com.mysql.jdbc.Driver");
-//			con = DriverManager.getConnection(DB_URL,User,Pass);
-//			
-//		}catch (Exception e){
-//			e.printStackTrace();
-//		}
-//	}
-//	static public String getPath(){
-//		String result=null;
-//		
-//		String homepath = null;
-//		String projectPath =null;
-//		String fileName = null;
-//		homepath = System.getProperty("user.home") + File.separator+ "Documents";
-//		fileName = "credentials.txt";
-//		if (System.getProperty("os.name").contains("Windows")){
-//			projectPath = "Github"+ File.separator + "javarepo" +
-//						   File.separator + "Helloweb" ;
-//		}else{
-//			projectPath = "github"+ File.separator + "javarepo" +
-//					   File.separator + "Helloweb" ;
-//		}
-//		result = homepath + File.separator +projectPath+ File.separator + fileName;
-//		return result;
-//	}
-	
 	
 	public boolean login(String uname, String pword)
 	{

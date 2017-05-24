@@ -9,7 +9,6 @@ import com.demo.model.User;
 public class UserService {
 	Connection con;
 	
-	
 	public UserService(){
 		try{
 			con = ConnectionProvider.getCon();
@@ -17,26 +16,6 @@ public class UserService {
 			e.printStackTrace();
 		}
 	}
-	
-	
-//	static String DB_URL = null;
-//	static String User = null;
-//	static String Pass = null;
-//	
-//	public UserService(){
-//		try {
-//			Properties prop = new Properties();
-//			prop.load(new FileInputStream(LoginService.getPath()));
-//			DB_URL = prop.getProperty("DB_URL");
-//			User = prop.getProperty("Username");
-//			Pass = prop.getProperty("Passwd");
-//			Class.forName("com.mysql.jdbc.Driver");
-//			con = DriverManager.getConnection(DB_URL,User,Pass);
-//			
-//		}catch (Exception e){
-//			e.printStackTrace();
-//		}
-//	}
 	
 	public int register(User user){
 		int result= 0;
